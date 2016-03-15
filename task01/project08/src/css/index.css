@@ -1,0 +1,12 @@
+.main {
+	padding: 10px;
+	overflow: hidden;
+}
+div.col {
+	padding: 10px;
+}
+.col div {
+	border: 1px solid #999;
+	background-color: #eee;
+	height: 50px;
+}
