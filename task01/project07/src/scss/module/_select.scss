@@ -1,0 +1,17 @@
+.select {
+	box-sizing: border-box;
+	height: 35px;
+	border: 0; 
+	padding-left: 10px;
+	font-size: 12px;
+	color: #aaa;
+  	-webkit-appearance:none;
+  	background: url(../images/select-icon.jpg) no-repeat scroll 95% #fff;
+	&:not(:last-child) {
+		margin-right: 30px;
+	}
+	option {
+		color: #333;
+		background-color: #e3e3e3;
+	}
+}

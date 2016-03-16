@@ -1,0 +1,22 @@
+.dots {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	bottom: 110px;
+	span,
+	.active {
+		display: inline-block;
+		box-sizing: border-box;
+		margin: 0 5px;
+		width: 10px;
+		height: 10px;
+		border: 1px solid $font-color;
+		border-radius: 50%;
+		transition: .5s;
+		cursor: pointer;
+		&:hover,
+		&.active {
+			background-color: $font-color;
+		}
+	}
+}

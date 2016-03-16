@@ -1,0 +1,65 @@
+.paragraph {
+	padding: 150px 0;
+	h3 {
+		position: relative;
+		max-width: 180px;
+		line-height: 1.5;
+		margin-bottom: 50px;
+		&::after {
+			position: absolute;
+			bottom: -20px;
+			left: 50%;
+			margin-left: -75px;
+			transform: scaleX(0.2);
+			content: '';
+			width: 150px;
+			height: 2px;
+			transition: 1s;
+		}
+		&:hover::after {
+			transform: scaleX(1);
+		}
+	}
+	a {
+		display: block;
+		width: 170px;
+		height: 45px;
+		line-height: 45px;
+		font-size: 20px;
+	}
+}	
+.para01 {
+	background-color: $main-color;
+	h3::after {
+		background-color: #fff;
+	}
+	h3,
+	a {
+		color: #fff;
+	}
+	a {
+		border: 1px solid #fff;
+		transition: .5s;
+		&:hover {
+			color: $main-color;
+			background-color: #fff;
+		}
+	}
+} 
+.para02 {
+	h3::after {
+		background-color: #ccc;
+	}
+	h3 {
+		color: $font-color;
+	}
+	a {
+		color: $main-color;
+		border: 1px solid $main-color;
+		transition: .5s;
+		&:hover {
+			color: #fff;
+			background-color: $main-color;
+		}
+	}
+} 

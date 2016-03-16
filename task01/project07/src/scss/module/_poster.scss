@@ -1,0 +1,13 @@
+#poster {
+	min-height: 280px;
+	padding-top: 80px;
+	background-color: #dedede;
+	text-align: center;
+	p {
+		margin-top: 45px;
+		text-align: center;
+		font-size: 54px;
+		color: $font-color;
+		letter-spacing: 5px;
+	}
+}
