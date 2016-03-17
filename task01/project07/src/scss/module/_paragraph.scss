@@ -1,6 +1,8 @@
 .paragraph {
 	padding: 150px 0;
 	h3 {
+		font-size: 21px;
+		font-weight: normal;
 		position: relative;
 		max-width: 180px;
 		line-height: 1.5;
@@ -63,3 +65,18 @@
 		}
 	}
 } 
+.para03 {
+	padding: 110px 0;
+	h3 {
+		margin-bottom: 20px;
+	}
+	h3::after {
+		background-color: $main-color;
+		bottom: -10px;
+	}
+	p {
+		font-size: 12px;
+		color: #aaa;
+		line-height: 1.5;
+	}
+}

@@ -81,6 +81,7 @@ gulp.task('libs', function() {
 
 gulp.task('connect', function() {
     connect.server({
+        port: 8888,
         root: './',
         livereload: true
     });
