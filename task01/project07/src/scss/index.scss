@@ -1,14 +1,21 @@
 @import "base/_config.scss";
+@import "base/_reset.scss";
+@import "base/_grid.scss";
+@import "base/_font.scss";
+@import "base/_position.scss";
+
+@import "mixin/_button.scss";
 
 @import "layout/_header.scss";
+@import "layout/_banner.scss";
+@import "layout/_slogan.scss";
+@import "layout/_poster.scss";
+@import "layout/_address.scss";
 @import "layout/_view.scss";
 @import "layout/_volunteer.scss";
 @import "layout/_footer.scss";
 
-@import "module/_banner.scss";
-@import "module/_slogan.scss";
-@import "module/_poster.scss";
-@import "module/_address.scss";
+
 @import "module/_select.scss";
 @import "module/_gallary.scss";
 @import "module/_textpage.scss";

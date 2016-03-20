@@ -1,16 +1,11 @@
 #address {
 	background: url(../images/address.jpg) no-repeat;
 	background-size: cover;
-	overflow: hidden;
 	h3 {
-		position: relative;
 		max-width: 300px;
-		margin: 0 auto;
 		margin-top: 50px;
 		color: #fff;
 		font-size: 22px;
-		font-weight: normal;
-		text-align: center;
 		&::after {
 			position: absolute;
 			bottom: -10px;
@@ -30,25 +25,15 @@
 	p {
 		margin-top: 20px;
 		color: #fff;
-		font-size: 14px;
-		text-align: center;
 	}
 	form {
 		margin: 50px auto;
 		height: 35px;
 		a {
-			box-sizing: border-box;
-			padding-left: 25px;
-			display: block;
-			height: 35px;
-			line-height: 35px;
-			background-color: #be4e48;
-			color: #fff;
-			text-align: center;
-			letter-spacing: 25px;
+			@include btn(100%, 35px, #be4e48, #fff, 25px);
 			transition: .5s;
 			&:hover {
-				background-color: $main-color;
+				@include btn-hover($main-color);
 			}
 		}
 	}

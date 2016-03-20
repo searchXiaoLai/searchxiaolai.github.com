@@ -1,11 +1,9 @@
 #poster {
-	min-height: 280px;
-	padding-top: 80px;
+	background: url('../images/poster.png') no-repeat center 30%;
 	background-color: #dedede;
-	text-align: center;
 	p {
-		margin-top: 45px;
-		text-align: center;
+		padding-top: 160px;
+		padding-bottom: 50px;
 		font-size: 54px;
 		color: $font-color;
 		letter-spacing: 5px;

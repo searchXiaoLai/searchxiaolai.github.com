@@ -1,29 +1,16 @@
 #banner {
-	position: relative;
-	img {
-		display: block;
-		width: 100%;
-	}	
 	.content {
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
 		margin-left: 115px;
 		color: #fff;
 		h2 {
 			font-size: 60px;
-			font-weight: normal;
-			margin-top: 0;
-			margin-bottom: 0;
 		}
 		p {
-			font-size: 20px;
 			font-weight: lighter;
 		}
 	}
 	a {
 		margin-top: 50px;
-		display: block;
 		width: 330px;
 		height: 65px;
 		line-height: 65px;

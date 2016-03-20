@@ -10,8 +10,7 @@ a:active,a:hover{outline:0}
 abbr[title]{border-bottom:1px dotted}
 b,strong{font-weight:700}
 dfn{font-style:italic}
-h1{font-size:2em;margin:.67em 0}
-mark{background:#ff0;color:#000}
+s mark{background:#ff0;color:#000}
 small{font-size:80%}
 sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}
 sup{top:-.5em}
@@ -39,13 +38,24 @@ textarea{overflow:auto}
 optgroup{font-weight:700}
 table{border-collapse:collapse;border-spacing:0}
 td,th{padding:0}
+h1,h2,h3,h4,h5,h6{font-weight:400;margin:0;padding:0}
+.h1{font-size:21px}
+.h2{font-size:20px}
+.h4{font-size:16px}
+.h5{font-size:14px}
+.h6{font-size:12px}
+.f-bold{font-weight:700}
 a{text-decoration:none}
 p{margin:0}
 *{outline:0}
 .center{margin:0 auto;text-align:center}
 .container{max-width:1280px;margin-left:auto;margin-right:auto;box-sizing:border-box}
-.float-left{float:left}
-.float-right{float:right}
+.overflow-hidden{overflow:hidden}
+.b-center{margin:0 auto}
+.center{margin:0 auto;text-align:center}
+.vertical-center{top:50%;transform:translateY(-50%)}
+.f-left{float:left}
+.f-right{float:right}
 .relative{position:relative}
 .absolute{position:absolute}
 .fixed{position:fixed}
