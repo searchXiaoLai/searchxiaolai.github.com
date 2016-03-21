@@ -25,10 +25,12 @@
   			var list = '';
   			aqiData.filter(function(item, index, array) {
   				return (item[1]>60);
-  			}).forEach(function(item, index, array){
-          list += '<li>' + item + '</li>';
+  			}).sort(function(val1, val2){
+            return val1[1] - val2[1];
+        }).forEach(function(item, index, array){
+          list += '<li>第' + (index + 1) + '名,' + item + '</li>';
         });
-        //使用Array的filter和forEach方法
+        //使用Array的filter,sort和forEach
         //预先拼接好再统一插入，避免频繁操作dom带来的性能损耗
   			document.getElementById('ul').innerHTML = list;
   		})(aqiData);
