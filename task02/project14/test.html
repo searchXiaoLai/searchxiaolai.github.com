@@ -22,14 +22,13 @@
   			遍历读取aqiData中各个城市的数据
   			将空气质量指数大于60的城市显示到aqi-list的列表中
   			*/
-  			var list = '',
-  			res = aqiData.filter(function(item, index, array) {
+  			var list = '';
+  			aqiData.filter(function(item, index, array) {
   				return (item[1]>60);
-  			});
-        //通过Array的filter方法，直接返回满足要求的数组
-  			for(var i = 0; i < res.length; i++) {
-  				list += '<li>' + res[i][0] + ':' + res[i][1] + '</li>';
-  			}
+  			}).forEach(function(item, index, array){
+          list += '<li>' + item + '</li>';
+        });
+        //使用Array的filter和forEach方法
         //预先拼接好再统一插入，避免频繁操作dom带来的性能损耗
   			document.getElementById('ul').innerHTML = list;
   		})(aqiData);
