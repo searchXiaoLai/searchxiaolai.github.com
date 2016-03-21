@@ -14,14 +14,14 @@
 }
 
 
-@mixin btnl($width, $height, $bdcolor, $color, $letter-spacing: 0) {
+@mixin btnl($width, $height, $color, $letter-spacing: 0) {
 	display: block;
 	box-sizing: border-box;
 	width: $width;
 	height: $height;
 	padding-left: $letter-spacing;
 	line-height: $height;
-	border: 1px solid $bdcolor;
+	border: 1px solid $color;
 	color: $color;
 	letter-spacing: $letter-spacing;
 	text-align: center;

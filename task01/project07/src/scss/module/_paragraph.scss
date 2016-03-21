@@ -23,10 +23,6 @@
 		}
 	}
 	a {
-		display: block;
-		width: 170px;
-		height: 45px;
-		line-height: 45px;
 		font-size: 20px;
 	}
 }	
@@ -40,11 +36,9 @@
 		color: #fff;
 	}
 	a {
-		border: 1px solid #fff;
-		transition: .5s;
+		@include btnl(170px, 45px, #fff)
 		&:hover {
-			color: $main-color;
-			background-color: #fff;
+			@include btn-hover(#fff, $main-color);
 		}
 	}
 } 
@@ -56,12 +50,9 @@
 		color: $font-color;
 	}
 	a {
-		color: $main-color;
-		border: 1px solid $main-color;
-		transition: .5s;
+		@include btnl(170px, 45px, $main-color)
 		&:hover {
-			color: #fff;
-			background-color: $main-color;
+			@include btn-hover($main-color);
 		}
 	}
 } 

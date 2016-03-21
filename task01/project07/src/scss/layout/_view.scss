@@ -3,9 +3,10 @@
 	&>div {
 		height: 530px;
 	}
-	.view01 {
+	hgroup {
+		height: 530px;
 		background: url(../images/view01.jpg) no-repeat;
-		padding: 120px 0;
+		padding: 115px 0;
 		h3,
 		h2,
 		p {
@@ -24,11 +25,12 @@
 			font-size: 22px;
 			line-height: 2;
 		}
-		&::after {
+		
+	}
+	hgroup::after {
 			right: 0;
 			border-right: 25px solid #fff;
 		}
-	}
 	.view02 {
 		background: url(../images/view02.jpg) no-repeat;
 		&::before {
@@ -36,12 +38,12 @@
 			border-left: 25px solid #fff;
 		}
 	}
-	.view01,
+	hgroup,
 	.view02 {
 		position: relative;
 		background-size: cover;
 	}
-	.view01::after,
+	hgroup::after,
 	.view02::before {
 		top: 50%;
 		transform: translateY(-50%);

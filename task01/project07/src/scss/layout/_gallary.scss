@@ -1,9 +1,7 @@
 #gallary {
-	min-height: 600px;
 	background-color: #f7f7f7;
 	overflow: hidden;
 	&>div {
-		min-height: 400px;
 		margin: 100px auto;
 	}
 	section {

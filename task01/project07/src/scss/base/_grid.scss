@@ -52,8 +52,8 @@
     display: none;
 }
 
-/* grids for xxsmall screen > 320px */
-@media (min-width: 320px) {
+/* grids for xxsmall screen < 360px */
+@media (max-width: 360px) {
     .col-xx {
         float: left;
         box-sizing: border-box;
@@ -109,8 +109,8 @@
     }
 }
 
-/* grids for xsmall screen > 360px */
-@media (min-width: 360px) {
+/* grids for xsmall screen < 400px */
+@media (max-width: 400px) {
     .col-xs {
         float: left;
         box-sizing: border-box;
@@ -166,8 +166,8 @@
     }
 }
 
-/* grids for small screen > 400px */
-@media (min-width: 400px) {
+/* grids for small screen < 640px */
+@media (max-width: 640px) {
     .col-sm {
         float: left;
         box-sizing: border-box;
@@ -223,8 +223,8 @@
     }
 }
 
-/* grids for medium screen > 768px */
-@media (min-width: 768px) {
+/* grids for medium screen < 768px */
+@media (max-width: 768px) {
     .col-md {
         float: left;
         box-sizing: border-box;
@@ -280,8 +280,8 @@
     }
 }
 
-/* grids for large screen > 960px */
-@media (min-width: 960px) {
+/* grids for large screen < 960px */
+@media (max-width: 960px) {
     .col-lg {
         float: left;
         box-sizing: border-box;
@@ -338,8 +338,8 @@
 }
 
 
-/* grids for xlarge screen > 1280px */
-@media (min-width: 1280px) {
+/* grids for xlarge screen < 1280px */
+@media (max-width: 1280px) {
     .col-xl {
         float: left;
         box-sizing: border-box;

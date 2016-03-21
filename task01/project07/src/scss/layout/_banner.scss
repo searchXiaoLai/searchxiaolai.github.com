@@ -10,16 +10,9 @@
 		}
 	}
 	a {
+		@include btn(330px, 65px, $main-color, #fff, 5px);
 		margin-top: 50px;
-		width: 330px;
-		height: 65px;
-		line-height: 65px;
-		text-align: center;
 		font-size: 30px;
-		color: #fff;
-		background-color: $main-color;
-		letter-spacing: 5px;
-		transition: .5s;
 		&:hover {
 			background-color: #ce4836;
 		}

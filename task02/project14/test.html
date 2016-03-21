@@ -18,9 +18,8 @@
 
 		(function () {
   			/*
-  			在注释下方编写代码
-  			遍历读取aqiData中各个城市的数据
-  			将空气质量指数大于60的城市显示到aqi-list的列表中
+        使用Array的filter,sort和forEach
+        预先拼接好再统一插入，避免频繁操作dom带来的性能损耗
   			*/
   			var list = '';
   			aqiData.filter(function(item, index, array) {
@@ -30,8 +29,7 @@
         }).forEach(function(item, index, array){
           list += '<li>第' + (index + 1) + '名,' + item + '</li>';
         });
-        //使用Array的filter,sort和forEach
-        //预先拼接好再统一插入，避免频繁操作dom带来的性能损耗
+        
   			document.getElementById('ul').innerHTML = list;
   		})(aqiData);
 

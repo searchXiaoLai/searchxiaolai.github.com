@@ -1,7 +1,16 @@
 #volunteer {
-	min-height: 750px;
+	padding-bottom: 100px;
 	.volunteer-sidebar {
 		padding-left: 120px;
+	}
+	@media (max-width: 640px) {
+		.volunteer-sidebar {
+			padding-left: 0;
+			& article {
+				width: 80%;
+				margin-left: 10%;
+			}
+		} 
 	}
 	.volunteer-main {
 		padding-left: 70px;
@@ -13,21 +22,12 @@
 			height: 120px;
 			background-color: #ededed;
 			border: none;
-			font-size: 12px;
 		}
 		a {
+			@include btn(calc(66.67% + 30px), 40px, #ededed, #333)
 			margin-top: 15px;
-			width: calc(66.67% + 30px);	
-			height: 40px;
-			line-height: 40px;
-			text-align: center;
-			background-color: #ededed;
-			color: #333;
-			font-size: 14px;
-			transition: .5s;
 			&:hover {
-				background-color: $main-color;
-				color: #ededed;
+				@include btn-hover($main-color);
 			}
 		}
 	}
